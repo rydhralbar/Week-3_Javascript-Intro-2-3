@@ -186,7 +186,7 @@ function valueSelection(firstValue, lastValue, arrayData) {
   } else {
     let newArray = [];
     arrayData.map((item) => {
-      if (item > firstValue && item < lastValue) {
+      if (item >= firstValue && item <= lastValue) {
         newArray.push(item);
       }
     });
